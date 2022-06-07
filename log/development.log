@@ -1,0 +1,544 @@
+  [1m[35m (17.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (179.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (123.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateAuthors (20220606084043)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "authors" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220606084043"]]
+  [1m[36mTRANSACTION (176.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBooks (20220606091053)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "books" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "authors_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_17ec77e93c"
+FOREIGN KEY ("authors_id")
+  REFERENCES "authors" ("id")
+)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE INDEX "index_books_on_authors_id" ON "books" ("authors_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220606091053"]]
+  [1m[36mTRANSACTION (247.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-06-06 10:31:37.505134"], ["updated_at", "2022-06-06 10:31:37.505134"]]
+  [1m[36mTRANSACTION (78.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-06-06 16:51:14 +0530
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms | Allocations: 3628)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:3: syntax error, unexpected label, expecting '='
+...hable.variant, resize_to_limit: [1, 1]
+...               ^~~~~~~~~~~~~~~~
+/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input):
+  
+app/models/author.rb:3: syntax error, unexpected label, expecting '='
+app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input
+app/models/author.rb:3: syntax error, unexpected label, expecting '='
+app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input
+app/models/author.rb:3: syntax error, unexpected label, expecting '='
+app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 16:51:43 +0530
+  
+ActionController::RoutingError (uninitialized constant AuthorController
+Did you mean?  AuthorsController):
+  
+Started GET "/" for ::1 at 2022-06-06 16:55:13 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 814)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:3: syntax error, unexpected label, expecting '='
+...hable.variant, resize_to_limit: [1, 1]
+...               ^~~~~~~~~~~~~~~~
+/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input):
+  
+app/models/author.rb:3: syntax error, unexpected label, expecting '='
+app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input
+app/models/author.rb:3: syntax error, unexpected label, expecting '='
+app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input
+app/models/author.rb:3: syntax error, unexpected label, expecting '='
+app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 16:56:56 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 814)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input):
+  
+app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input
+app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input
+app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 16:57:15 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 3ms (Allocations: 847)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input
+  end
+  ^~~
+):
+  
+app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input
+app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input
+app/models/author.rb:5: syntax error, unexpected `end', expecting end-of-input
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 16:57:30 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 297ms (Allocations: 14892)
+
+
+  
+RuntimeError (Missing service adapter for "GCS"):
+  
+app/models/author.rb:2:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 16:58:58 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 41ms (Allocations: 7267)
+
+
+  
+RuntimeError (Missing service adapter for "GCS"):
+  
+app/models/author.rb:2:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 16:59:02 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 13ms (Allocations: 4552)
+
+
+  
+RuntimeError (Missing service adapter for "GCS"):
+  
+app/models/author.rb:2:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 17:00:27 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 30ms (Allocations: 7266)
+
+
+  
+RuntimeError (Missing service adapter for "GCS"):
+  
+app/models/author.rb:2:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 17:09:27 +0530
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 5277ms (ActiveRecord: 0.0ms | Allocations: 428835)
+
+
+  
+Aws::Sigv4::Errors::MissingCredentialsError (missing credentials, provide credentials with one of the following options:
+  - :access_key_id and :secret_access_key
+  - :credentials
+  - :credentials_provider):
+  
+app/models/author.rb:2:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 17:35:55 +0530
+  [1m[35m (22.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 6949ms (ActiveRecord: 0.0ms | Allocations: 266207)
+
+
+  
+ArgumentError (Cannot configure service :s3 for Author#profile_picture):
+  
+app/models/author.rb:2:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 17:52:37 +0530
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 321ms (ActiveRecord: 0.0ms | Allocations: 194307)
+
+
+  
+ArgumentError (Cannot configure service :s3 for Author#profile_picture):
+  
+app/models/author.rb:2:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 17:53:15 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 34ms (Allocations: 7114)
+
+
+  
+NameError (undefined local variable or method `attachable' for Author:Class):
+  
+app/models/author.rb:3:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 18:06:43 +0530
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthorsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (24.5ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:6
+  Rendered authors/index.html.erb within layouts/application (Duration: 37.4ms | Allocations: 1417)
+  Rendered layout layouts/application.html.erb (Duration: 966.6ms | Allocations: 91168)
+Completed 200 OK in 1005ms (Views: 948.5ms | ActiveRecord: 24.5ms | Allocations: 100031)
+
+
+Started GET "/authors/new" for ::1 at 2022-06-06 18:06:48 +0530
+Processing by AuthorsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 221.9ms | Allocations: 5860)
+  Rendered authors/new.html.erb within layouts/application (Duration: 224.4ms | Allocations: 6193)
+  Rendered layout layouts/application.html.erb (Duration: 243.3ms | Allocations: 8387)
+Completed 200 OK in 322ms (Views: 244.5ms | ActiveRecord: 1.3ms | Allocations: 12862)
+
+
+Started POST "/authors" for ::1 at 2022-06-06 18:07:03 +0530
+Processing by AuthorsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "author"=>{"name"=>"", "address"=>""}, "commit"=>"Create Author"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:27:in `block in create'
+  [1m[36mAuthor Create (22.2ms)[0m  [1m[32mINSERT INTO "authors" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["address", ""], ["created_at", "2022-06-06 12:37:03.522756"], ["updated_at", "2022-06-06 12:37:03.522756"]]
+  ↳ app/controllers/authors_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (243.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/authors/1
+Completed 302 Found in 286ms (ActiveRecord: 266.0ms | Allocations: 3455)
+
+
+Started GET "/authors/1" for ::1 at 2022-06-06 18:07:03 +0530
+Processing by AuthorsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/_author.html.erb (Duration: 147.2ms | Allocations: 11050)
+  Rendered authors/show.html.erb within layouts/application (Duration: 166.8ms | Allocations: 11957)
+  Rendered layout layouts/application.html.erb (Duration: 167.2ms | Allocations: 12035)
+Completed 500 Internal Server Error in 206ms (ActiveRecord: 1.1ms | Allocations: 14775)
+
+
+  
+ActionView::Template::Error (Could not find table 'active_storage_attachments'):
+    11: 
+    12:   <p>
+    13:     <strong>Profile picture:</strong>
+    14:     <%= link_to author.profile_picture.filename, author.profile_picture if author.profile_picture.attached? %>
+    15:   </p>
+    16: 
+    17: </div>
+  
+app/views/authors/_author.html.erb:14
+app/views/authors/show.html.erb:3
+Started GET "/" for ::1 at 2022-06-06 18:07:12 +0530
+Processing by AuthorsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:6
+  Rendered authors/_author.html.erb (Duration: 8.0ms | Allocations: 1497)
+  Rendered authors/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 2314)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 2393)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.4ms | Allocations: 2698)
+
+
+  
+ActionView::Template::Error (Could not find table 'active_storage_attachments'):
+    11: 
+    12:   <p>
+    13:     <strong>Profile picture:</strong>
+    14:     <%= link_to author.profile_picture.filename, author.profile_picture if author.profile_picture.attached? %>
+    15:   </p>
+    16: 
+    17: </div>
+  
+app/views/authors/_author.html.erb:14
+app/views/authors/index.html.erb:7
+app/views/authors/index.html.erb:6
+Started GET "/" for ::1 at 2022-06-06 18:07:28 +0530
+Processing by AuthorsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:6
+  Rendered authors/_author.html.erb (Duration: 1.9ms | Allocations: 1497)
+  Rendered authors/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2312)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2391)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms | Allocations: 2695)
+
+
+  
+ActionView::Template::Error (Could not find table 'active_storage_attachments'):
+    11: 
+    12:   <p>
+    13:     <strong>Profile picture:</strong>
+    14:     <%= link_to author.profile_picture.filename, author.profile_picture if author.profile_picture.attached? %>
+    15:   </p>
+    16: 
+    17: </div>
+  
+app/views/authors/_author.html.erb:14
+app/views/authors/index.html.erb:7
+app/views/authors/index.html.erb:6
+Started GET "/" for ::1 at 2022-06-06 18:07:37 +0530
+Processing by AuthorsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:6
+  Rendered authors/_author.html.erb (Duration: 4.4ms | Allocations: 1497)
+  Rendered authors/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 2307)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 2385)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.6ms | Allocations: 2681)
+
+
+  
+ActionView::Template::Error (Could not find table 'active_storage_attachments'):
+    11: 
+    12:   <p>
+    13:     <strong>Profile picture:</strong>
+    14:     <%= link_to author.profile_picture.filename, author.profile_picture if author.profile_picture.attached? %>
+    15:   </p>
+    16: 
+    17: </div>
+  
+app/views/authors/_author.html.erb:14
+app/views/authors/index.html.erb:7
+app/views/authors/index.html.erb:6
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActiveStorageTables (20220606123938)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "service_name" varchar NOT NULL, "byte_size" bigint NOT NULL, "checksum" varchar, "created_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" bigint NOT NULL, "variation_digest" varchar NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220606123938"]]
+  [1m[36mTRANSACTION (256.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (54.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-06-06 18:10:03 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthorsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:6
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  Rendered authors/_author.html.erb (Duration: 18.4ms | Allocations: 5350)
+  Rendered authors/index.html.erb within layouts/application (Duration: 29.8ms | Allocations: 7791)
+  Rendered layout layouts/application.html.erb (Duration: 71.7ms | Allocations: 21385)
+Completed 200 OK in 88ms (Views: 71.5ms | ActiveRecord: 3.8ms | Allocations: 24776)
+
+
+Started GET "/" for ::1 at 2022-06-06 18:19:01 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 4ms (Allocations: 828)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected ',', expecting `end'
+  ,aspect_ratio: :square, size: ...
+  ^
+/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+...: :square, size: { 1.megabytes, message: 'is not in given si...
+...                              ^
+/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+...ssage: 'is not in given size' }
+...                              ^
+):
+  
+app/models/author.rb:4: syntax error, unexpected ',', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 18:19:17 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 4ms (Allocations: 852)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+...: :square, size: { 1.megabytes, message: 'is not in given si...
+...                              ^
+/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+...ssage: 'is not in given size' }
+...                              ^
+):
+  
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 18:19:52 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 820)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+...=> square, size: { 1.megabytes, message: 'is not in given si...
+...                              ^
+/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+...ssage: 'is not in given size' }
+...                              ^
+):
+  
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 18:26:42 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 820)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+...: :square, size: { 1.megabytes, message: 'is not in given si...
+...                              ^
+/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+...ssage: 'is not in given size' }
+...                              ^
+):
+  
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 18:26:46 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 4ms (Allocations: 772)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+...: :square, size: { 1.megabytes, message: 'is not in given si...
+...                              ^
+/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+...ssage: 'is not in given size' }
+...                              ^
+):
+  
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 18:27:02 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 5ms (Allocations: 773)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+...: :square, size: { 1.megabytes, message: 'is not in given si...
+...                              ^
+/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+...ssage: 'is not in given size' }
+...                              ^
+):
+  
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 18:27:03 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 772)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+...: :square, size: { 1.megabytes, message: 'is not in given si...
+...                              ^
+/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+...ssage: 'is not in given size' }
+...                              ^
+):
+  
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-06 18:49:28 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 253ms (Allocations: 3675)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+...: :square, size: { 1.megabytes, message: 'is not in given si...
+...                              ^
+/home/khushbu/Desktop/ROR/Practice/crud/app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+...ssage: 'is not in given size' }
+...                              ^
+):
+  
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/controllers/authors_controller.rb:6:in `index'
