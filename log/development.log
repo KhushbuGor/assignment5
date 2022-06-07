@@ -542,3 +542,965 @@ app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
 app/models/author.rb:4: syntax error, unexpected ',', expecting =>
 app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
 app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-07 09:47:09 +0530
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 3224)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/Assignments/crud/app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+...: :square, size: { 1.megabytes, message: 'is not in given si...
+...                              ^
+/home/khushbu/Desktop/Assignments/crud/app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+...ssage: 'is not in given size' }
+...                              ^
+):
+  
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/models/author.rb:4: syntax error, unexpected ',', expecting =>
+app/models/author.rb:4: syntax error, unexpected '}', expecting `end'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-07 09:49:04 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 36ms (Allocations: 4221)
+
+
+  
+ArgumentError (Unknown validator: 'AttachedValidator'):
+  
+app/models/author.rb:3:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-07 09:49:27 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 13ms (Allocations: 3299)
+
+
+  
+ArgumentError (Unknown validator: 'AttachmentValidator'):
+  
+app/models/author.rb:3:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-07 09:50:02 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 3ms (Allocations: 821)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/Assignments/crud/app/models/author.rb:3: syntax error, unexpected ':', expecting `end'
+...es :profile_picture, attached : true, content_type: ['image/...
+...                              ^
+/home/khushbu/Desktop/Assignments/crud/app/models/author.rb:3: Can't assign to true
+...rofile_picture, attached : true, content_type: ['image/png']...
+...                           ^~~~
+/home/khushbu/Desktop/Assignments/crud/app/models/author.rb:3: syntax error, unexpected ',', expecting `end'
+..., content_type: ['image/png'] ,
+...                              ^
+):
+  
+app/models/author.rb:3: syntax error, unexpected ':', expecting `end'
+app/models/author.rb:3: Can't assign to true
+app/models/author.rb:3: syntax error, unexpected ',', expecting `end'
+app/models/author.rb:3: syntax error, unexpected ':', expecting `end'
+app/models/author.rb:3: Can't assign to true
+app/models/author.rb:3: syntax error, unexpected ',', expecting `end'
+app/models/author.rb:3: syntax error, unexpected ':', expecting `end'
+app/models/author.rb:3: Can't assign to true
+app/models/author.rb:3: syntax error, unexpected ',', expecting `end'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-07 09:50:14 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 8ms (Allocations: 3300)
+
+
+  
+ArgumentError (Unknown validator: 'AttachedValidator'):
+  
+app/models/author.rb:3:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-07 09:54:23 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 10ms (Allocations: 3266)
+
+
+  
+ArgumentError (Unknown validator: 'AttachedValidator'):
+  
+app/models/author.rb:3:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-07 09:55:33 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 10ms (Allocations: 3258)
+
+
+  
+ArgumentError (Unknown validator: 'AttachedValidator'):
+  
+app/models/author.rb:3:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-07 09:57:30 +0530
+Processing by AuthorsController#index as HTML
+Completed 500 Internal Server Error in 8ms (Allocations: 3265)
+
+
+  
+ArgumentError (Unknown validator: 'AttachedValidator'):
+  
+app/models/author.rb:3:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authors_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-06-07 09:57:46 +0530
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthorsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:6
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  Rendered authors/_author.html.erb (Duration: 130.1ms | Allocations: 10542)
+  Rendered authors/index.html.erb within layouts/application (Duration: 197.3ms | Allocations: 16508)
+  Rendered layout layouts/application.html.erb (Duration: 375.7ms | Allocations: 50028)
+Completed 200 OK in 402ms (Views: 377.8ms | ActiveRecord: 3.5ms | Allocations: 59078)
+
+
+Started GET "/authors/1" for ::1 at 2022-06-07 09:57:50 +0530
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  Rendered authors/_author.html.erb (Duration: 4.9ms | Allocations: 892)
+  Rendered authors/show.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1708)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 3894)
+Completed 200 OK in 25ms (Views: 20.2ms | ActiveRecord: 0.6ms | Allocations: 5409)
+
+
+Started GET "/authors/1/edit" for ::1 at 2022-06-07 09:57:52 +0530
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 89.7ms | Allocations: 7190)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 92.1ms | Allocations: 7561)
+  Rendered layout layouts/application.html.erb (Duration: 97.4ms | Allocations: 9750)
+Completed 200 OK in 102ms (Views: 98.6ms | ActiveRecord: 0.2ms | Allocations: 10598)
+
+
+Started PATCH "/authors/1" for ::1 at 2022-06-07 09:58:09 +0530
+Processing by AuthorsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "author"=>{"name"=>"", "address"=>"", "profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x000056490e8205e8 @tempfile=#<Tempfile:/tmp/RackMultipart20220607-32830-5dffbn.png>, @original_filename="Screenshot from 2022-06-04 22-05-14.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"author[profile_picture]\"; filename=\"Screenshot from 2022-06-04 22-05-14.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Author", "id"=>"1"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+Completed 500 Internal Server Error in 2407ms (ActiveRecord: 3.7ms | Allocations: 236090)
+
+
+  
+LoadError (Could not open library 'vips.so.42': vips.so.42: cannot open shared object file: No such file or directory.
+Could not open library 'libvips.so.42': libvips.so.42: cannot open shared object file: No such file or directory):
+  
+app/controllers/authors_controller.rb:40:in `block in update'
+app/controllers/authors_controller.rb:39:in `update'
+Started GET "/authors/1/edit" for ::1 at 2022-06-07 09:58:53 +0530
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 5.3ms | Allocations: 1337)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1475)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3676)
+Completed 200 OK in 39ms (Views: 13.2ms | ActiveRecord: 0.3ms | Allocations: 4451)
+
+
+Started PATCH "/authors/1" for ::1 at 2022-06-07 09:59:02 +0530
+Processing by AuthorsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "author"=>{"name"=>"", "address"=>"", "profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x00007f41345242a8 @tempfile=#<Tempfile:/tmp/RackMultipart20220607-32830-ac6u8d.png>, @original_filename="Screenshot from 2022-03-07 16-19-42.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"author[profile_picture]\"; filename=\"Screenshot from 2022-03-07 16-19-42.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Author", "id"=>"1"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+Skipping image analysis because the mini_magick or ruby-vips gem isn't installed
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 8.4ms | Allocations: 2295)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2444)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 4685)
+Completed 422 Unprocessable Entity in 37ms (Views: 18.3ms | ActiveRecord: 0.7ms | Allocations: 9613)
+
+
+Started PATCH "/authors/1" for ::1 at 2022-06-07 09:59:12 +0530
+Processing by AuthorsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "author"=>{"name"=>"", "address"=>"", "profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x00007f4148c70340 @tempfile=#<Tempfile:/tmp/RackMultipart20220607-32830-jyiowo.png>, @original_filename="Screenshot from 2022-05-31 11-10-25.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"author[profile_picture]\"; filename=\"Screenshot from 2022-05-31 11-10-25.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Author", "id"=>"1"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+Skipping image analysis because the mini_magick or ruby-vips gem isn't installed
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 11.9ms | Allocations: 2209)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 13.8ms | Allocations: 2358)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 4599)
+Completed 422 Unprocessable Entity in 43ms (Views: 21.5ms | ActiveRecord: 1.3ms | Allocations: 9458)
+
+
+Started PATCH "/authors/1" for ::1 at 2022-06-07 09:59:21 +0530
+Processing by AuthorsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "author"=>{"name"=>"", "address"=>"", "profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x00007f4134c35470 @tempfile=#<Tempfile:/tmp/RackMultipart20220607-32830-pdysq4.png>, @original_filename="Screenshot from 2022-05-31 11-10-13.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"author[profile_picture]\"; filename=\"Screenshot from 2022-05-31 11-10-13.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Author", "id"=>"1"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+Skipping image analysis because the mini_magick or ruby-vips gem isn't installed
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 9.5ms | Allocations: 2209)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 11.2ms | Allocations: 2358)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 4600)
+Completed 422 Unprocessable Entity in 45ms (Views: 21.9ms | ActiveRecord: 1.1ms | Allocations: 9478)
+
+
+Started PATCH "/authors/1" for ::1 at 2022-06-07 10:04:47 +0530
+Processing by AuthorsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "author"=>{"name"=>"", "address"=>"", "profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x00007f4144543e18 @tempfile=#<Tempfile:/tmp/RackMultipart20220607-32830-pxjxi6.png>, @original_filename="favicon.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"author[profile_picture]\"; filename=\"favicon.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Author", "id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+Skipping image analysis because the mini_magick or ruby-vips gem isn't installed
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 4.1ms | Allocations: 2261)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2417)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 15882)
+Completed 422 Unprocessable Entity in 70ms (Views: 25.8ms | ActiveRecord: 1.2ms | Allocations: 41596)
+
+
+Started PATCH "/authors/1" for ::1 at 2022-06-07 10:06:09 +0530
+Processing by AuthorsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "author"=>{"name"=>"", "address"=>"", "profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x00007f414590e600 @tempfile=#<Tempfile:/tmp/RackMultipart20220607-32830-gezxrt.png>, @original_filename="Red-Square-PNG-HD-Photos.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"author[profile_picture]\"; filename=\"Red-Square-PNG-HD-Photos.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Author", "id"=>"1"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+Skipping image analysis because the mini_magick or ruby-vips gem isn't installed
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 5.7ms | Allocations: 2209)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2358)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 4599)
+Completed 422 Unprocessable Entity in 40ms (Views: 17.4ms | ActiveRecord: 0.8ms | Allocations: 9473)
+
+
+Started GET "/authors/1/edit" for ::1 at 2022-06-07 10:06:16 +0530
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 7.5ms | Allocations: 1379)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1525)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 3764)
+Completed 200 OK in 23ms (Views: 18.5ms | ActiveRecord: 0.3ms | Allocations: 4538)
+
+
+Started PATCH "/authors/1" for ::1 at 2022-06-07 10:06:22 +0530
+Processing by AuthorsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "author"=>{"name"=>"", "address"=>"", "profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x00007f4145c1d738 @tempfile=#<Tempfile:/tmp/RackMultipart20220607-32830-arassc.png>, @original_filename="Red-Square-PNG-HD-Photos.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"author[profile_picture]\"; filename=\"Red-Square-PNG-HD-Photos.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Author", "id"=>"1"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+Skipping image analysis because the mini_magick or ruby-vips gem isn't installed
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 7.8ms | Allocations: 2209)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 9.2ms | Allocations: 2358)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 4599)
+Completed 422 Unprocessable Entity in 38ms (Views: 18.8ms | ActiveRecord: 0.7ms | Allocations: 9469)
+
+
+Started GET "/authors/1/edit" for ::1 at 2022-06-07 10:06:40 +0530
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 7.0ms | Allocations: 1435)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1588)
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 14965)
+Completed 200 OK in 59ms (Views: 37.1ms | ActiveRecord: 2.8ms | Allocations: 21363)
+
+
+Started PATCH "/authors/1" for ::1 at 2022-06-07 10:06:46 +0530
+Processing by AuthorsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "author"=>{"name"=>"", "address"=>"", "profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x00007f414646ef18 @tempfile=#<Tempfile:/tmp/RackMultipart20220607-32830-blg96r.png>, @original_filename="Red-Square-PNG-HD-Photos.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"author[profile_picture]\"; filename=\"Red-Square-PNG-HD-Photos.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Author", "id"=>"1"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+Skipping image analysis because the mini_magick or ruby-vips gem isn't installed
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 7.1ms | Allocations: 2215)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2364)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4605)
+Completed 422 Unprocessable Entity in 90ms (Views: 12.7ms | ActiveRecord: 2.9ms | Allocations: 25554)
+
+
+Started GET "/authors/1/edit" for ::1 at 2022-06-07 10:06:56 +0530
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 10.6ms | Allocations: 1439)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 11.5ms | Allocations: 1592)
+  Rendered layout layouts/application.html.erb (Duration: 92.0ms | Allocations: 15022)
+Completed 200 OK in 128ms (Views: 95.3ms | ActiveRecord: 3.6ms | Allocations: 21453)
+
+
+Started PATCH "/authors/1" for ::1 at 2022-06-07 10:07:01 +0530
+Processing by AuthorsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "author"=>{"name"=>"", "address"=>"", "profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x000056490fe17bf8 @tempfile=#<Tempfile:/tmp/RackMultipart20220607-32830-uzx3zc.png>, @original_filename="Red-Square-PNG-HD-Photos.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"author[profile_picture]\"; filename=\"Red-Square-PNG-HD-Photos.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Author", "id"=>"1"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Create (552.0ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["key", "jqg1acdfkgd6htsdwk9jfiscguzh"], ["filename", "Red-Square-PNG-HD-Photos.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "amazon"], ["byte_size", 2106], ["checksum", "OnTtApuclrqNyw8irB8i9g=="], ["created_at", "2022-06-07 04:37:01.952870"]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Attachment Create (1.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "profile_picture"], ["record_type", "Author"], ["record_id", 1], ["blob_id", 1], ["created_at", "2022-06-07 04:37:02.517371"]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mAuthor Update (0.4ms)[0m  [1m[33mUPDATE "authors" SET "updated_at" = ? WHERE "authors"."id" = ?[0m  [["updated_at", "2022-06-07 04:37:02.529150"], ["id", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (264.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+[36m  GCS Storage (2.0ms) [0m[32mUploaded file to key: jqg1acdfkgd6htsdwk9jfiscguzh (checksum: OnTtApuclrqNyw8irB8i9g==)[0m
+Completed 500 Internal Server Error in 927ms (ActiveRecord: 821.9ms | Allocations: 26115)
+
+
+  
+ArgumentError (unknown keywords: :access_key_id, :secret_access_key, :region, :http_open_timeout, :http_read_timeout, :retry_limit, :upload, :gcs):
+  
+app/controllers/authors_controller.rb:40:in `block in update'
+app/controllers/authors_controller.rb:39:in `update'
+Started GET "/authors/1/edit" for ::1 at 2022-06-07 10:08:03 +0530
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 16.5ms | Allocations: 1361)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 19.1ms | Allocations: 1499)
+  Rendered layout layouts/application.html.erb (Duration: 43.0ms | Allocations: 3698)
+Completed 200 OK in 57ms (Views: 48.0ms | ActiveRecord: 0.5ms | Allocations: 4471)
+
+
+Started PATCH "/authors/1" for ::1 at 2022-06-07 10:08:10 +0530
+Processing by AuthorsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "author"=>{"name"=>"", "address"=>"", "profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x00007f414642e0d0 @tempfile=#<Tempfile:/tmp/RackMultipart20220607-32830-nolryj.png>, @original_filename="favicon.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"author[profile_picture]\"; filename=\"favicon.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Author", "id"=>"1"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Attachment Destroy (0.8ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["key", "7wnd88ledovqsstbco7ssshi71lq"], ["filename", "favicon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "amazon"], ["byte_size", 879], ["checksum", "Ttr9+978Kxz+VTv5X0mYQA=="], ["created_at", "2022-06-07 04:38:10.109907"]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Attachment Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "profile_picture"], ["record_type", "Author"], ["record_id", 1], ["blob_id", 2], ["created_at", "2022-06-07 04:38:10.113567"]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mAuthor Update (0.2ms)[0m  [1m[33mUPDATE "authors" SET "updated_at" = ? WHERE "authors"."id" = ?[0m  [["updated_at", "2022-06-07 04:38:10.117790"], ["id", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (231.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+[36m  GCS Storage (2.4ms) [0m[32mUploaded file to key: 7wnd88ledovqsstbco7ssshi71lq (checksum: Ttr9+978Kxz+VTv5X0mYQA==)[0m
+Completed 500 Internal Server Error in 276ms (ActiveRecord: 234.2ms | Allocations: 9122)
+
+
+  
+ArgumentError (unknown keywords: :access_key_id, :secret_access_key, :region, :http_open_timeout, :http_read_timeout, :retry_limit, :upload, :gcs):
+  
+app/controllers/authors_controller.rb:40:in `block in update'
+app/controllers/authors_controller.rb:39:in `update'
+Started GET "/authors/1/edit" for ::1 at 2022-06-07 10:08:21 +0530
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 26.0ms | Allocations: 5121)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 30.3ms | Allocations: 5788)
+  Rendered layout layouts/application.html.erb (Duration: 129.8ms | Allocations: 39189)
+Completed 200 OK in 173ms (Views: 133.7ms | ActiveRecord: 1.3ms | Allocations: 54649)
+
+
+Started PATCH "/authors/1" for ::1 at 2022-06-07 10:08:23 +0530
+Processing by AuthorsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "author"=>{"name"=>"", "address"=>""}, "commit"=>"Update Author", "id"=>"1"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+Redirected to http://localhost:3000/authors/1
+Completed 302 Found in 233ms (ActiveRecord: 4.5ms | Allocations: 32719)
+
+
+Started GET "/authors/1" for ::1 at 2022-06-07 10:08:24 +0530
+Processing by AuthorsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  Rendered authors/_author.html.erb (Duration: 15.6ms | Allocations: 2398)
+  Rendered authors/show.html.erb within layouts/application (Duration: 24.4ms | Allocations: 3560)
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 5803)
+Completed 200 OK in 47ms (Views: 39.9ms | ActiveRecord: 0.8ms | Allocations: 6712)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3bb9ee443360154455772bd469ac5757a29da02b/favicon.png" for ::1 at 2022-06-07 10:08:27 +0530
+Processing by ActiveStorage::Blobs::RedirectController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3bb9ee443360154455772bd469ac5757a29da02b", "filename"=>"favicon"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.6ms | Allocations: 2908)
+
+
+  
+KeyError (Missing configuration for the amazon Active Storage service. Configurations available for the test and local services.):
+  
+activestorage (7.0.3) lib/active_storage/service/registry.rb:18:in `block in fetch'
+activestorage (7.0.3) lib/active_storage/service/registry.rb:11:in `fetch'
+activestorage (7.0.3) lib/active_storage/service/registry.rb:11:in `fetch'
+activestorage (7.0.3) app/models/active_storage/blob.rb:340:in `service'
+activestorage (7.0.3) app/models/active_storage/blob.rb:217:in `url'
+activestorage (7.0.3) app/controllers/active_storage/blobs/redirect_controller.rb:14:in `show'
+actionpack (7.0.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.3) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.3) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.3) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.3) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.3) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.3) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.3) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.3) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.3) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.3) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.3) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.3) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.3.1) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3.1) lib/rack/etag.rb:27:in `call'
+rack (2.2.3.1) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3.1) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.3.1) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3.1) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/authors/1/edit" for ::1 at 2022-06-07 10:08:32 +0530
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (Duration: 5.4ms | Allocations: 1342)
+  Rendered authors/edit.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1480)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 3682)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.2ms | Allocations: 4475)
+
+
+Started PATCH "/authors/1" for ::1 at 2022-06-07 10:08:37 +0530
+Processing by AuthorsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "author"=>{"name"=>"", "address"=>"", "profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x00007f4d6c11e458 @tempfile=#<Tempfile:/tmp/RackMultipart20220607-34345-scjn2j.png>, @original_filename="favicon.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"author[profile_picture]\"; filename=\"favicon.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Author", "id"=>"1"}
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Attachment Destroy (0.9ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Blob Create (0.9ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["key", "fyx6x8acla0w1ac4sgld15n91af7"], ["filename", "favicon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 879], ["checksum", "Ttr9+978Kxz+VTv5X0mYQA=="], ["created_at", "2022-06-07 04:38:38.159382"]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mActiveStorage::Attachment Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "profile_picture"], ["record_type", "Author"], ["record_id", 1], ["blob_id", 3], ["created_at", "2022-06-07 04:38:38.169341"]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mAuthor Update (0.5ms)[0m  [1m[33mUPDATE "authors" SET "updated_at" = ? WHERE "authors"."id" = ?[0m  [["updated_at", "2022-06-07 04:38:38.176438"], ["id", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (2461.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+[36m  Disk Storage (53.0ms) [0m[32mUploaded file to key: fyx6x8acla0w1ac4sgld15n91af7 (checksum: Ttr9+978Kxz+VTv5X0mYQA==)[0m
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:40:in `block in update'
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: d39f39b9-bf84-4fa3-b2b5-2d240a5a2c41) to Async(default) with arguments: #<GlobalID:0x00007f4d94d40858 @uri=#<URI::GID gid://crud/ActiveStorage::Blob/2>>
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 3028d307-47d0-4958-ad4d-be17a94f640b) to Async(default) with arguments: #<GlobalID:0x00007f4d94d920e0 @uri=#<URI::GID gid://crud/ActiveStorage::Blob/3>>
+Redirected to http://localhost:3000/authors/1
+Completed 302 Found in 3011ms (ActiveRecord: 2465.6ms | Allocations: 16564)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [d39f39b9-bf84-4fa3-b2b5-2d240a5a2c41]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [d39f39b9-bf84-4fa3-b2b5-2d240a5a2c41] Performing ActiveStorage::PurgeJob (Job ID: d39f39b9-bf84-4fa3-b2b5-2d240a5a2c41) from Async(default) enqueued at 2022-06-07T04:38:41Z with arguments: #<GlobalID:0x00007f4d94da9100 @uri=#<URI::GID gid://crud/ActiveStorage::Blob/2>>
+Started GET "/authors/1" for ::1 at 2022-06-07 10:08:41 +0530
+Processing by AuthorsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3028d307-47d0-4958-ad4d-be17a94f640b]   [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3028d307-47d0-4958-ad4d-be17a94f640b]   [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3028d307-47d0-4958-ad4d-be17a94f640b] Performing ActiveStorage::AnalyzeJob (Job ID: 3028d307-47d0-4958-ad4d-be17a94f640b) from Async(default) enqueued at 2022-06-07T04:38:41Z with arguments: #<GlobalID:0x00007f4d94e02228 @uri=#<URI::GID gid://crud/ActiveStorage::Blob/3>>
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+[ActiveJob] [ActiveStorage::PurgeJob] [d39f39b9-bf84-4fa3-b2b5-2d240a5a2c41]   [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3028d307-47d0-4958-ad4d-be17a94f640b] [36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: fyx6x8acla0w1ac4sgld15n91af7[0m
+  Rendered authors/_author.html.erb (Duration: 12.5ms | Allocations: 2273)
+[ActiveJob] [ActiveStorage::PurgeJob] [d39f39b9-bf84-4fa3-b2b5-2d240a5a2c41]   [1m[36mActiveStorage::Attachment Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 2], ["LIMIT", 1]]
+  Rendered authors/show.html.erb within layouts/application (Duration: 41.8ms | Allocations: 3662)
+  Rendered layout layouts/application.html.erb (Duration: 72.9ms | Allocations: 7702)
+Completed 200 OK in 149ms (Views: 75.6ms | ActiveRecord: 1.8ms | Allocations: 15239)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [d39f39b9-bf84-4fa3-b2b5-2d240a5a2c41]   [1m[36mActiveStorage::VariantRecord Load (0.4ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ?[0m  [["blob_id", 2]]
+[ActiveJob] [ActiveStorage::PurgeJob] [d39f39b9-bf84-4fa3-b2b5-2d240a5a2c41]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [d39f39b9-bf84-4fa3-b2b5-2d240a5a2c41]   [1m[36mActiveStorage::Blob Destroy (1.7ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 2]]
+[ActiveJob] [ActiveStorage::PurgeJob] [d39f39b9-bf84-4fa3-b2b5-2d240a5a2c41]   [1m[36mTRANSACTION (119.2ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [d39f39b9-bf84-4fa3-b2b5-2d240a5a2c41] Error performing ActiveStorage::PurgeJob (Job ID: d39f39b9-bf84-4fa3-b2b5-2d240a5a2c41) from Async(default) in 430.32ms: KeyError (Missing configuration for the amazon Active Storage service. Configurations available for the test and local services.):
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activestorage-7.0.3/lib/active_storage/service/registry.rb:18:in `block in fetch'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activestorage-7.0.3/lib/active_storage/service/registry.rb:11:in `fetch'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activestorage-7.0.3/lib/active_storage/service/registry.rb:11:in `fetch'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activestorage-7.0.3/app/models/active_storage/blob.rb:340:in `service'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activestorage-7.0.3/app/models/active_storage/blob.rb:319:in `delete'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activestorage-7.0.3/app/models/active_storage/blob.rb:328:in `purge'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activestorage-7.0.3/app/jobs/active_storage/purge_job.rb:11:in `perform'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/execution.rb:59:in `block in _perform_job'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/i18n-1.10.0/lib/i18n.rb:328:in `with_locale'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/translation.rb:9:in `block (2 levels) in <module:Translation>'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/callbacks.rb:127:in `instance_exec'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/core_ext/time/zones.rb:66:in `use_zone'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/timezones.rb:9:in `block (2 levels) in <module:Timezones>'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/callbacks.rb:127:in `instance_exec'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/callbacks.rb:138:in `run_callbacks'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/execution.rb:58:in `_perform_job'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/instrumentation.rb:20:in `_perform_job'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/execution.rb:46:in `perform_now'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/instrumentation.rb:14:in `block in perform_now'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/instrumentation.rb:25:in `block in instrument'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/notifications.rb:206:in `block in instrument'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/notifications.rb:206:in `instrument'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/instrumentation.rb:35:in `instrument'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/instrumentation.rb:14:in `perform_now'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/logging.rb:18:in `block in perform_now'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/tagged_logging.rb:38:in `tagged'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/tagged_logging.rb:114:in `tagged'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/logging.rb:25:in `tag_logger'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/logging.rb:18:in `perform_now'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/execution.rb:24:in `block in execute'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/railtie.rb:54:in `block (4 levels) in <class:Railtie>'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/execution_wrapper.rb:92:in `wrap'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/reloader.rb:72:in `block in wrap'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/execution_wrapper.rb:92:in `wrap'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/reloader.rb:71:in `wrap'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/railtie.rb:53:in `block (3 levels) in <class:Railtie>'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/callbacks.rb:127:in `instance_exec'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activesupport-7.0.3/lib/active_support/callbacks.rb:138:in `run_callbacks'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/execution.rb:22:in `execute'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/activejob-7.0.3/lib/active_job/queue_adapters/async_adapter.rb:70:in `perform'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+/home/khushbu/.rvm/gems/ruby-3.0.0/gems/concurrent-ruby-1.1.10/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3028d307-47d0-4958-ad4d-be17a94f640b] Skipping image analysis because the ruby-vips gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3028d307-47d0-4958-ad4d-be17a94f640b]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3028d307-47d0-4958-ad4d-be17a94f640b]   [1m[36mActiveStorage::Blob Update (0.7ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 3]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3028d307-47d0-4958-ad4d-be17a94f640b]   [1m[36mTRANSACTION (67.2ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3028d307-47d0-4958-ad4d-be17a94f640b] Performed ActiveStorage::AnalyzeJob (Job ID: 3028d307-47d0-4958-ad4d-be17a94f640b) from Async(default) in 484.96ms
+Started GET "/authors/1" for ::1 at 2022-06-07 10:13:16 +0530
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  Rendered authors/_author.html.erb (Duration: 22.1ms | Allocations: 3603)
+  Rendered authors/show.html.erb within layouts/application (Duration: 25.4ms | Allocations: 4158)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 4237)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.8ms | Allocations: 5723)
+
+
+  
+ActionView::Template::Error (undefined method `symbolize_keys' for #<ActiveStorage::Attached::One:0x00007f4d8c154218 @name="profile_picture", @record=#<Author id: 1, name: "", address: "", created_at: "2022-06-06 12:37:03.522756000 +0000", updated_at: "2022-06-07 04:38:38.176438000 +0000">>):
+    11: 
+    12:   <p>
+    13:     <strong>Profile picture:</strong>
+    14:     <%= image_tag author.profile_picture.filename, author.profile_picture if author.profile_picture.attached? %>
+    15:   </p>
+    16: 
+    17: </div>
+  
+app/views/authors/_author.html.erb:14
+app/views/authors/show.html.erb:3
+Started GET "/authors/1" for ::1 at 2022-06-07 10:15:12 +0530
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  Rendered authors/_author.html.erb (Duration: 77.0ms | Allocations: 3447)
+  Rendered authors/show.html.erb within layouts/application (Duration: 79.9ms | Allocations: 4000)
+  Rendered layout layouts/application.html.erb (Duration: 81.3ms | Allocations: 4079)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.6ms | Allocations: 5540)
+
+
+  
+ActionView::Template::Error (undefined method `symbolize_keys' for #<ActiveStorage::Attached::One:0x00007f4da0bc0288 @name="profile_picture", @record=#<Author id: 1, name: "", address: "", created_at: "2022-06-06 12:37:03.522756000 +0000", updated_at: "2022-06-07 04:38:38.176438000 +0000">>):
+    11: 
+    12:   <p>
+    13:     <strong>Profile picture:</strong>
+    14:     <%= image_tag author.profile_picture, author.profile_picture if author.profile_picture.attached? %>
+    15:   </p>
+    16: 
+    17: </div>
+  
+app/views/authors/_author.html.erb:14
+app/views/authors/show.html.erb:3
+Started GET "/authors/1" for ::1 at 2022-06-07 10:15:38 +0530
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  Rendered authors/_author.html.erb (Duration: 23.4ms | Allocations: 2038)
+  Rendered authors/show.html.erb within layouts/application (Duration: 28.2ms | Allocations: 2915)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 5396)
+Completed 200 OK in 46ms (Views: 40.4ms | ActiveRecord: 0.8ms | Allocations: 6892)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--27d336c902bc6183d1ead8994193076a6b922e52/favicon.png" for ::1 at 2022-06-07 10:15:38 +0530
+Processing by ActiveStorage::Blobs::RedirectController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--27d336c902bc6183d1ead8994193076a6b922e52", "filename"=>"favicon"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (1.7ms) [0m[34mGenerated URL for file at key: fyx6x8acla0w1ac4sgld15n91af7 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabmw0Tm5nNFlXTnNZVEIzTVdGak5ITm5iR1F4Tlc0NU1XRm1Od1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1aaGRtbGpiMjR1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZG1ZWFpwWTI5dUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNi0wN1QwNDo1MDozOC42MDhaIiwicHVyIjoiYmxvYl9rZXkifX0=--a01b1eae6fc7e04c704ce0c98e173714e40b8e56/favicon.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabmw0Tm5nNFlXTnNZVEIzTVdGak5ITm5iR1F4Tlc0NU1XRm1Od1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1aaGRtbGpiMjR1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZG1ZWFpwWTI5dUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNi0wN1QwNDo1MDozOC42MDhaIiwicHVyIjoiYmxvYl9rZXkifX0=--a01b1eae6fc7e04c704ce0c98e173714e40b8e56/favicon.png
+Completed 302 Found in 14ms (ActiveRecord: 0.5ms | Allocations: 1380)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabmw0Tm5nNFlXTnNZVEIzTVdGak5ITm5iR1F4Tlc0NU1XRm1Od1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1aaGRtbGpiMjR1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZG1ZWFpwWTI5dUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNi0wN1QwNDo1MDozOC42MDhaIiwicHVyIjoiYmxvYl9rZXkifX0=--a01b1eae6fc7e04c704ce0c98e173714e40b8e56/favicon.png" for ::1 at 2022-06-07 10:15:38 +0530
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"favicon"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 241)
+
+
+Started GET "/authors/1" for ::1 at 2022-06-07 10:17:17 +0530
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (Allocations: 839)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/Assignments/crud/app/models/author.rb:4: syntax error, unexpected ':', expecting ']'
+...       aspect_ratio: :square[1:1], 
+...                              ^
+/home/khushbu/Desktop/Assignments/crud/app/models/author.rb:6: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/models/author.rb:4: syntax error, unexpected ':', expecting ']'
+app/models/author.rb:6: syntax error, unexpected end-of-input, expecting `end'
+app/models/author.rb:4: syntax error, unexpected ':', expecting ']'
+app/models/author.rb:6: syntax error, unexpected end-of-input, expecting `end'
+app/models/author.rb:4: syntax error, unexpected ':', expecting ']'
+app/models/author.rb:6: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/authors_controller.rb:63:in `set_author'
+Started GET "/authors/1" for ::1 at 2022-06-07 10:18:13 +0530
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (Allocations: 837)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/Assignments/crud/app/models/author.rb:4: syntax error, unexpected ':', expecting ']'
+...       aspect_ratio: :square[1:1], 
+...                              ^
+):
+  
+app/models/author.rb:4: syntax error, unexpected ':', expecting ']'
+app/models/author.rb:4: syntax error, unexpected ':', expecting ']'
+app/models/author.rb:4: syntax error, unexpected ':', expecting ']'
+app/controllers/authors_controller.rb:63:in `set_author'
+Started GET "/authors/1" for ::1 at 2022-06-07 10:18:45 +0530
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (Allocations: 837)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/Assignments/crud/app/models/author.rb:4: syntax error, unexpected ':', expecting ']'
+    aspect_ratio: :square[1:1], 
+                           ^
+):
+  
+app/models/author.rb:4: syntax error, unexpected ':', expecting ']'
+app/models/author.rb:4: syntax error, unexpected ':', expecting ']'
+app/models/author.rb:4: syntax error, unexpected ':', expecting ']'
+app/controllers/authors_controller.rb:63:in `set_author'
+Started GET "/authors/1" for ::1 at 2022-06-07 10:19:54 +0530
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (Allocations: 837)
+
+
+  
+SyntaxError (/home/khushbu/Desktop/Assignments/crud/app/models/author.rb:5: syntax error, unexpected ':', expecting `end'
+    size: { less_than: 1.megabytes , m...
+        ^
+):
+  
+app/models/author.rb:5: syntax error, unexpected ':', expecting `end'
+app/models/author.rb:5: syntax error, unexpected ':', expecting `end'
+app/models/author.rb:5: syntax error, unexpected ':', expecting `end'
+app/controllers/authors_controller.rb:63:in `set_author'
+Started GET "/authors/1" for ::1 at 2022-06-07 10:20:54 +0530
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  Rendered authors/_author.html.erb (Duration: 72.5ms | Allocations: 18703)
+  Rendered authors/show.html.erb within layouts/application (Duration: 78.0ms | Allocations: 19349)
+  Rendered layout layouts/application.html.erb (Duration: 132.4ms | Allocations: 32855)
+Completed 200 OK in 165ms (Views: 131.6ms | ActiveRecord: 7.1ms | Allocations: 39425)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--27d336c902bc6183d1ead8994193076a6b922e52/favicon.png" for ::1 at 2022-06-07 10:20:54 +0530
+Processing by ActiveStorage::Blobs::RedirectController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--27d336c902bc6183d1ead8994193076a6b922e52", "filename"=>"favicon"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: fyx6x8acla0w1ac4sgld15n91af7 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabmw0Tm5nNFlXTnNZVEIzTVdGak5ITm5iR1F4Tlc0NU1XRm1Od1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1aaGRtbGpiMjR1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZG1ZWFpwWTI5dUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNi0wN1QwNDo1NTo1NC42MzhaIiwicHVyIjoiYmxvYl9rZXkifX0=--cea34d3c1eacee63bc6ad506741e1356d204df4c/favicon.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabmw0Tm5nNFlXTnNZVEIzTVdGak5ITm5iR1F4Tlc0NU1XRm1Od1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1aaGRtbGpiMjR1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZG1ZWFpwWTI5dUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNi0wN1QwNDo1NTo1NC42MzhaIiwicHVyIjoiYmxvYl9rZXkifX0=--cea34d3c1eacee63bc6ad506741e1356d204df4c/favicon.png
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms | Allocations: 2004)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabmw0Tm5nNFlXTnNZVEIzTVdGak5ITm5iR1F4Tlc0NU1XRm1Od1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1aaGRtbGpiMjR1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZG1ZWFpwWTI5dUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNi0wN1QwNDo1NTo1NC42MzhaIiwicHVyIjoiYmxvYl9rZXkifX0=--cea34d3c1eacee63bc6ad506741e1356d204df4c/favicon.png" for ::1 at 2022-06-07 10:20:54 +0530
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"favicon"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 228)
+
+
+Started GET "/authors/1" for ::1 at 2022-06-07 10:21:09 +0530
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  Rendered authors/_author.html.erb (Duration: 67.0ms | Allocations: 18684)
+  Rendered authors/show.html.erb within layouts/application (Duration: 71.9ms | Allocations: 19332)
+  Rendered layout layouts/application.html.erb (Duration: 112.3ms | Allocations: 32714)
+Completed 200 OK in 134ms (Views: 108.4ms | ActiveRecord: 8.0ms | Allocations: 39264)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabmw0Tm5nNFlXTnNZVEIzTVdGak5ITm5iR1F4Tlc0NU1XRm1Od1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1aaGRtbGpiMjR1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZG1ZWFpwWTI5dUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNi0wN1QwNDo1NTo1NC42MzhaIiwicHVyIjoiYmxvYl9rZXkifX0=--cea34d3c1eacee63bc6ad506741e1356d204df4c/favicon.png" for ::1 at 2022-06-07 10:21:09 +0530
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"favicon"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/authors/1" for ::1 at 2022-06-07 10:21:24 +0530
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:63:in `set_author'
+  Rendering layout layouts/application.html.erb
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Author"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/authors/_author.html.erb:14
+  Rendered authors/_author.html.erb (Duration: 234.1ms | Allocations: 18688)
+  Rendered authors/show.html.erb within layouts/application (Duration: 242.7ms | Allocations: 19338)
+  Rendered layout layouts/application.html.erb (Duration: 306.4ms | Allocations: 32820)
+Completed 200 OK in 336ms (Views: 304.2ms | ActiveRecord: 9.1ms | Allocations: 39372)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhabmw0Tm5nNFlXTnNZVEIzTVdGak5ITm5iR1F4Tlc0NU1XRm1Od1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1aaGRtbGpiMjR1Y0c1bklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZG1ZWFpwWTI5dUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNi0wN1QwNDo1NTo1NC42MzhaIiwicHVyIjoiYmxvYl9rZXkifX0=--cea34d3c1eacee63bc6ad506741e1356d204df4c/favicon.png" for ::1 at 2022-06-07 10:21:24 +0530
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"favicon"}
+Completed 304 Not Modified in 6ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+

@@ -11,7 +11,7 @@
 
   <p>
     <strong>Profile picture:</strong>
-    <%= link_to author.profile_picture.filename, author.profile_picture if author.profile_picture.attached? %>
+    <%= image_tag author.profile_picture %>
   </p>
 
 </div>
