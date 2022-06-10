@@ -2,8 +2,6 @@
 
 one:
   name: MyString
-  authors: one
 
 two:
   name: MyString
-  authors: two

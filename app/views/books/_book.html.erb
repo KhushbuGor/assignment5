@@ -7,13 +7,13 @@
   <p>
     <strong>Cover photos:</strong>
     <% book.cover_photos.each do |cover_photo| %>
-      <div><%= link_to cover_photo.filename, cover_photo %></div>
+      <div><%= image_tag cover_photo %></div>
     <% end %>
   </p>
 
   <p>
     <strong>Authors:</strong>
-    <%= book.authors_id %>
+    <%= book.author.name %>
   </p>
 
 </div>

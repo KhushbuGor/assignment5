@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_06_123938) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_10_095628) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -48,13 +48,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_06_123938) do
 
   create_table "books", force: :cascade do |t|
     t.string "name"
-    t.integer "authors_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["authors_id"], name: "index_books_on_authors_id"
+    t.integer "author_id"
+    t.index ["author_id"], name: "index_books_on_author_id"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "books", "authors", column: "authors_id"
 end

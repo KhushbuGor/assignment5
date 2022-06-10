@@ -21,8 +21,11 @@ class BooksController < ApplicationController
 
   # POST /books or /books.json
   def create
-    @book = Book.new(book_params)
-
+    # @book = Book.new( name: book_params[:name] )
+    author_temp = Author.where( name: [book_params[:authors_id]] ).first()
+    
+    @book = author_temp.books.create( name: book_params[:name], cover_photos: book_params[:cover_photos] )
+    puts @book.inspect
     respond_to do |format|
       if @book.save
         format.html { redirect_to book_url(@book), notice: "Book was successfully created." }
